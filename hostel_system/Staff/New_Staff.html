@@ -1,0 +1,55 @@
+﻿<html>
+<head>
+<title>Adding new Staff</title>
+<link href="../new_style.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+.auto-style1 {
+	text-align: left;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+}
+form {
+        width: 65%;
+        border: 5px solid rgb(22, 62, 51);
+        padding: 20px;
+        background-color: rgb(23, 174, 224);
+        border-radius: 10px;    
+        text-decoration-color: #0c0101;
+		font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    input{
+        display: block;
+        border: 2px solid #ccc;
+        width: 100%;
+        padding: 15px;
+        margin: auto;
+        border-radius: 3px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+</style>
+</head>
+
+<body>
+<legend class="auto-style1"><h1>New staff Form</h1></legend>
+<form name="frmContact" method="post" action="New_Staff.php">
+	<p>
+		<label for="First">FirstName </label>
+		<input type="text" name="txtFirst" id="txtFirst" placeholder="Enter First Name" required>
+	</p>
+	<p>
+		<label for="Last">LastName</label>
+		<input type="text" name="txtLast" id="txtLast" placeholder="Enter Last Name" required>
+	</p>
+	<p>
+		<label for="Age">Age</label>
+		<input type="text" name="txtAge" id="txtAge" placeholder="Enter age of staff" required>
+</p>
+<p>
+	<label for="Mobile">Mobile</label>
+	<input type ="text" name="txtMobile" id="txtMobile" placeholder="Enter mobile number" required>
+</p>
+<p>
+	<button type="submit">Submit</button>
+</p>
+</form>
+</body>
+</html>
